@@ -54,6 +54,13 @@ ul{
     font-weight: 700;
     font-size: 1.4rem;
 }
+
+.logo-cont{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 /* .logo span{
     background-color: #014dd5;
     color: #ffffff;
@@ -513,7 +520,6 @@ ul{
     text-decoration: underline;
     font-weight: 600;
 }
-
 /*==why-choose-us======================*/
 #why-choose-us{
     width: 100%;
@@ -633,6 +639,7 @@ ul{
 #our-team{
     max-width: 1200px;
     width: 90%;
+    height: 405px;
     margin: 80px auto;
 }
 .our-team-heading{
@@ -798,7 +805,10 @@ ul{
 .swiper-pagination{
    position: static !important;
 }
-/*==subscribe=====================*/
+.cro{
+    background-color: #181818;
+}
+/* ==subscribe=====================
 #subscribe{
     max-width: 1000px;
     width: 90%;
@@ -847,9 +857,13 @@ ul{
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: 0.4px;
-}
+    letter-spacing: 0.4px; 
+}*/
 /*==footer================================*/
+.footer-logo-cont{
+    display: flex;
+    align-items: center;
+}
 footer{
     width: 100%;
     background-color:  #f5f7fb;
@@ -960,15 +974,18 @@ footer{
 }
 @media(max-width:950px){
     .navigation{
-        justify-content: space-between;
+        justify-content: start;
+        gap: 6%;
         padding: 30px 0px;
         position: relative;
         width: 100%;
         padding: 20px;
     }
-    .logo,
-    .nav-appointment-btn{
+    .logo{
         z-index: 103;
+    }
+    .nav-appointment-btn{
+        display: none;
     }
     .logo{
         margin-right: auto;
@@ -991,7 +1008,7 @@ footer{
         position: absolute;
         left: 0px;
         top: -100%;
-        background-color: #ffffff;
+        /* background-color: #ffffff; */
         width: 100%;
         height: 100%;
     }
@@ -1024,6 +1041,7 @@ footer{
         display: block;
         position: relative;
         height: 2px;
+        padding-left: 5px;
         transition: background 0.2s ease-out;
         width: 25px;
     }
@@ -1058,6 +1076,10 @@ footer{
  
     .navigation .menu-btn:checked ~ .menu{
         display: block;
+    }
+    /* hero img */
+    .hero-img img{
+        width: 75vw;
     }
 
     .what-we-provide{

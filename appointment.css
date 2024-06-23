@@ -12,14 +12,26 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #1f242d;
+    background-image: url(./assets/cover\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 .contact h2{
     font-size: 40px;
-    color: #ededed;
+    color: black;
     text-align: center;
+    letter-spacing: 3px;
     margin-bottom: 10px;
+    font-variant: small-caps;
 }
+
+.contact h2 img{
+    width: 100px;
+}
+
 .contact form{
     width: 600px;
     text-align: center;
@@ -34,6 +46,27 @@ form .input-box {
     width: 48.5%;
 }
 
+.input-box .input-field input{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(2px);
+    color: rgb(255, 214, 214);
+}
+
+.input-box .input-field input::placeholder{
+    color: black
+}
+
+#message{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(2px);
+    color: rgb(255, 214, 214);
+    letter-spacing: 1px;
+}
+
+#message::placeholder{
+    color: #000000;
+}
+
 .field .item{
     width: 100%;
     padding: 18px;
@@ -47,13 +80,29 @@ form .input-box {
     width: 100%;
     padding: 18px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 3px solid rgb(0, 0, 0);
     outline: none;
     border-radius: 6px;
     font-size: 16px;
-    color: #ededed;
+    color: #000000;
     margin: 12px 0;
 } 
+
+.field.error .item{
+    border-color: #d93025;
+}
+
+.field .error-txt{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt{
+    display: block;
+}
 
 .field .item::placeholder{
     color: rgba(255, 255, 255, .3);
@@ -77,13 +126,13 @@ form .textarea-field .error-txt{
 
 form button{
     padding: 12px 32px;
-    background: #0ef;
+    background: rgb(252, 252, 252);
     border: none;
     outline: none;
     border-radius: 6px;
-    box-shadow: 0 0 10px #0ef;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     font-size: 16px;
-    color: #333;
+    color: #000000;
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
@@ -93,4 +142,42 @@ form button{
 
 form button:hover{
     box-shadow: none;
+}
+
+
+/* responsive for 620px */
+
+@media(max-width:720px) {
+    .contact h2{
+        font-size: 30px;
+    }
+
+    .contact form{
+        width: 450px;
+    }
+
+}
+
+@media(max-width:460px){
+    .contact form{
+        width: 350px;
+    }
+}
+
+@media(max-width:472px){
+    .contact form{
+        width: 300px;
+    }
+}
+
+@media(max-width:329px){
+    .contact form{
+        width: 280px;
+    }
+}
+
+@media(max-width:256pxx){
+    .contact form{
+        width: 250px;
+    }
 }

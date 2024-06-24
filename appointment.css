@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(./assets/cover\ 1.jpg);
+    background-image: url(./images/webp/cover\ 1.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,7 +145,7 @@ form button:hover{
 }
 
 
-/* responsive for 620px */
+
 
 @media(max-width:720px) {
     .contact h2{
@@ -161,6 +161,9 @@ form button:hover{
 @media(max-width:460px){
     .contact form{
         width: 350px;
+    }
+    .logo-cont img{
+        width: 200px;
     }
 }
 

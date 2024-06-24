@@ -31,7 +31,7 @@ function sendEmail() {
         }
       }
     );
-}
+};
 
 function checkInputs(){
     const items = document.querySelectorAll(".item");
@@ -60,7 +60,7 @@ function checkInputs(){
             }
         })
     }
-}
+};
 
 function checkEmail() {
     const emailRegex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;

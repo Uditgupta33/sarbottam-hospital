@@ -94,6 +94,28 @@ ul{
     letter-spacing: 1px;
     font-size: 0.9rem;
 }
+/* emergency call */
+.emer-call{
+    width: 80%;
+    height: 2vhpx;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(236, 17, 17);
+    color: white;
+    border-radius: 20px;
+}
+.emer-icon{
+    display: flex;
+    padding-top: 6px;
+    
+}
+.icon-emer{
+    width: 50px;
+    padding: 6.5px 10px;
+}
 /*==hero-content==================*/
 .hero-content{
     max-width: 1200px;
@@ -941,11 +963,22 @@ footer{
         z-index: 103;
     }
     .nav-appointment-btn{
-        display: none;
+        display: block;
+        margin-left: 33%;
+        padding: 10px;
     }
     .logo{
         margin-right: auto;
         margin-left: 20px;
+    }
+    .hero-content{
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .hero-text{
+        margin-top: 8px;
+        border-radius: 5px;
+        padding: 10px;
     }
     .navigation .menu{
         display: none;
@@ -1035,7 +1068,7 @@ footer{
     }
     /* hero img */
     .hero-img img{
-        width: 75vw;
+        width: 80vw;
     }
 
     .what-we-provide{
@@ -1062,6 +1095,17 @@ footer{
     }
     .testimonials-img img{
         width: 100%;
+    }
+}
+@media (max-width:949px){
+    .team-img {
+        width: 258px;
+        height: 300px;
+    }
+}
+@media(max-width:675px){
+    .nav-appointment-btn{
+    margin-left: 20%;
     }
 }
 @media(max-width:620px){
@@ -1109,13 +1153,6 @@ footer{
     }
     .why-choose-box-container{
         grid-template-columns: 1fr;}
-    #subscribe h3{
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-    }
-    #subscribe{
-        padding: 20px;
-    }
 	 .footer-container{
         grid-template-columns: 1fr;
     }
@@ -1127,45 +1164,151 @@ footer{
         height: 452px;
     }
 }
+@media(max-width:579px){
+    .nav-appointment-btn{
+        margin-left: 5%;
+    }
+}
+@media(max-width:559px){
+    .team-img {
+        width: 258px;
+        height: 300px;
+        margin: 0 auto;
+    }
+}
+@media(max-width:503px){
+    .what-we-provide{
+        margin-top: 15%;
+    }
+}
+@media(max-width:475px){
+    .nav-appointment-btn{
+        padding: 10px;
+    }
+    .logo-cont img{
+        width: 70px;
+        height: 70px;
+    }
+    .logo-cont a{
+        font-size: 15px;
+    }
+    .hero-content{
+        margin: 25px auto;
+    }
+}
+@media(max-width:466px){
+    .what-we-provide{
+        margin-top: 18%;
+    }
+}
+@media(max-width:449px){
+    .what-we-provide{
+        margin-top: 25%;
+    }
+}
+@media(max-width:414px){
+    .hero-text{
+        margin-bottom: 2%;
+    }
+    .what-we-provide{
+        width: 90%;
+        margin-top: 40%;
+    }
+    #our_story{
+        margin-top: -30%;
+    }
+}
 @media(max-width:420px){
     .mySwiper.autoPlay{
         width: 350px;
         height: 452px;
     }
-}
-@media(max-width:380px){
-    .mySwiper.autoPlay{
-        width: 280px;
-        height: 450px;
+    .nav-appointment-btn{
+        width: 100px;
+        font-size: 11px;
+        padding-top: 13px;
+    }
+    .logo-cont img{
+        width: 65px;
+        height: 65px;
+    }
+    .logo-cont a{
+        font-size: 12px;
+    }
+    .hero-content{
+        margin: 25px auto;
+    }
+    .what-we-provide{
+        margin-top: 150px;
     }
 }
 
+@media(max-width:385px){
+
+    .hero-content{
+        margin: 30px auto;
+    }
+    .navigation{
+        padding: 10px;
+    }
+    .logo-cont{
+        gap: 4px;
+    }
+    .logo-cont img{
+        width: 50px;
+    }
+    .logo-cont a{
+        font-size: 13px;
+    }
+    .nav-appointment-btn{
+        display: block;
+        padding: 10px;
+        font-size: 12px;
+    }
+    .mySwiper.autoPlay{
+        width: 280px;
+        height: 350px;
+    }
+}
+@media(max-width:378px){
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+    .hero-content{
+        margin: 15px auto;
+    }
+    .nav-appointment-btn{
+        font-size: 10px;
+        padding: 12px;
+    }
+    .hero-content{
+        margin-bottom: 30%;
+    }
+    #our_story{
+        margin-top: 0;
+    }
+}
 @media(max-width:320px){
     .nav-appointment-btn{
-        display: none;
+        display: block;
     }
     .story-numbers-container{
         grid-template-columns: 1fr;
     }
+    .what-we-provide{
+        display: none;
+    }
+    .our-story-img{
+        margin-bottom: 30%;
+    }
 }
 
-/* crousal swiper */
-/* 
-html,
-    body {
-      position: relative;
-      height: 100%;
+@media(max-width:360px){
+    #hero{
+
     }
-
-    body {
-      background: #eee;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    } */
-
+}
     .autoPlay{
         width: 500px;
         height: 450px;
@@ -1215,4 +1358,8 @@ html,
       stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
       stroke-dasharray: 125.6;
       transform: rotate(-90deg);
+    }
+
+    @media(max-width:320px){
+
     }
